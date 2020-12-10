@@ -1,0 +1,43 @@
+---
+title: "People's social status level will affect their interest in  voting sinificantly"
+author: "songyuanluo"
+date: "09/12/2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(pROC)
+library(rms)
+library(janitor)
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+```
+
+# Abstract
+
+The 2020 American presidential election results in Biden will be the next president of the U.S.We want to know which group of people are intending to vote for Biden. In this study.We will find how  voter's income, education, and employment especially impact adjustments for their voting interest. we applied Multilevel regression with post-stratification to the 2020 American presidential election survey and census data and found that middle-class people are more willing to vote for Biden.
+
+#keyword
+
+2020 US general election, Biden, Middle class,Multilevel regression with post-stratification
+
+
+# Introduction
+
+ we obtained the survey data and post-stratification data from Tausanovitch, Chris, and Lynn Vavreck. 2020. Democracy Fund + UCLA Nationscape and the work of American Community Surveys ACS respectively. There are 6479 observations in the survey data containing 265 variables and 613777 observations in the post-stratification data. 
+Secondly, we select the variables: education, employment, and income
+to be the independent variable. Then, we filter out those missing data. We will classify voters into 5 classes: upper middle class, middle class, lower-middle-class, working-class, and casual working class.
+We used the brm (Bayesian generalized non-linear multilevel model) to predict which class of people are in favor of voting for Biden.
+
+
+# Data
+
+# Model
+
+# Discussion and Results
+
+# Appendices
+
+# References
